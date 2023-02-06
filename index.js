@@ -62,7 +62,7 @@ function createTeam() {
     // Ask the user questions about the team member using inquirer's prompt method. Store their answers in a variable called answers.
     inquirer.prompt(questions).then((data) => {
       // Push answers into an array.
-      console.log("answers: " + data.name);
+      //console.log("answers: " + data.name);
 
       if (role == "Manager") {
         let manager = new Manager(
@@ -85,7 +85,7 @@ function createTeam() {
         team.push(intern);
       }
 
-      console.log(team);
+      //console.log(team);
 
       // Ask the user if they would like to add another team member or finish creating their team
       inquirer
